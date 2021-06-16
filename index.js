@@ -15,7 +15,7 @@ const deafultValue = ""
 const PORT = 4000 || process.env.PORT
 const io = require('socket.io')(PORT, {
     cors: {
-        origin: '*:*',
+        origin: '*',
         methods: ['GET', 'POST']
     }
 })
