@@ -13,7 +13,7 @@ mongoose.connect(MONGO_URI, {
 
 const deafultValue = ""
 const PORT = 4000 || process.env.PORT
-const io = require('socket.io')(4000, {
+const io = require('socket.io')(PORT, {
     cors: {
         origin: '*:*',
         methods: ['GET', 'POST']
