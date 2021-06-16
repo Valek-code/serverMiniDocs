@@ -15,7 +15,7 @@ const deafultValue = ""
 const PORT = 4000 || process.env.PORT
 const io = require('socket.io')(4000, {
     cors: {
-        origin: 'https://eager-kilby-8f2a12.netlify.app:*',
+        origin: '*:*',
         methods: ['GET', 'POST']
     }
 })
